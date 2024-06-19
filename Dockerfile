@@ -28,4 +28,4 @@ RUN echo '<!DOCTYPE html> \
 EXPOSE 80
 
 # Start nginx
-CMD ["httpd", "d"]
+CMD ["nginx", "-g", "daemon off;"]
