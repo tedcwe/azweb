@@ -24,6 +24,8 @@ RUN echo '<!DOCTYPE html> \
 </body> \
 </html>' > /var/www/html/index.html
 
+COPY t.html /var/www/html/
+
 # Expose HTTP
 EXPOSE 80
 
