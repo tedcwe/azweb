@@ -8,9 +8,13 @@ MAINTAINER Jan Wagner "waja@cyconet.org"
 RUN apt-get update && apt-get install --no-install-recommends -y nginx; \
  echo "daemon off;" >> /etc/nginx/nginx.conf \ 
  echo "<!DOCTYPE html>
-<head>
-    <title>My Echo Web Server</title>
-</head>
+ <head>
+    <title>hamada Page r</title>
+</head
+<h1> Hamada is the leader </h1>
+<h2> Hamada is the second leader </h2>
+<h3> Hamada is the third leader </h3>
+
 <body>
     <h1>Welcome to my Echo web server!</h1>
     <p>This is a simple HTML page served by Echo.</p>
