@@ -5,7 +5,7 @@ FROM debian:latest
 LABEL maintainer="Osama Elshazly"
 
 # Install nginx and adjust nginx config to stay in foreground
-RUN apt-get update && apt-get install --no-install-recommends -y nginx 
+RUN apt-get update && apt-get install --no-install-recommends -y httpd 
 
 # Create index.html using echo command
 RUN echo '<!DOCTYPE html> \
@@ -28,4 +28,4 @@ RUN echo '<!DOCTYPE html> \
 EXPOSE 80
 
 # Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["httpd", "d"]
